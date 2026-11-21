@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "abagonhishead.amdpower",
+  "name": "AMD power",
+  "version": "0.1.0",
+  "author": "abagonhishead",
+  "license": "MIT",
+  "description": "Read-only view of AMD Ryzen power, current and temperature limits with live readings and plain-English explanations, read from the ryzen_smu kernel module.",
+  "kinds": [
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "AMD power",
+    "description": "Live package power against the sustained limit in the bar; every SMU limit explained in plain English in the popup.",
+    "category": "System",
+    "aliases": [
+      "ryzenadj",
+      "stapm",
+      "tdp",
+      "power limit",
+      "ryzen_smu"
+    ],
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "refreshIntervalSec": 2,
+      "showLabel": true,
+      "showBars": true,
+      "graphPower": true,
+      "graphCurrent": true,
+      "graphTemperature": true,
+      "barFontSize": 10,
+      "showLimits": true
+    },
+    "schema": [
+      {
+        "key": "refreshIntervalSec",
+        "type": "integer",
+        "label": "Bar refresh interval (seconds)",
+        "min": 1,
+        "max": 60,
+        "step": 1,
+        "defaultValue": 2
+      },
+      {
+        "key": "showLabel",
+        "type": "boolean",
+        "label": "Power reading in the tray",
+        "defaultValue": true
+      },
+      {
+        "key": "showBars",
+        "type": "boolean",
+        "label": "Limit gauges",
+        "defaultValue": true
+      },
+      {
+        "key": "graphPower",
+        "type": "boolean",
+        "label": "Power graph",
+        "defaultValue": true
+      },
+      {
+        "key": "graphCurrent",
+        "type": "boolean",
+        "label": "Current graph",
+        "defaultValue": true
+      },
+      {
+        "key": "graphTemperature",
+        "type": "boolean",
+        "label": "Temperature graph",
+        "defaultValue": true
+      },
+      {
+        "key": "barFontSize",
+        "type": "integer",
+        "label": "Tray reading text size (px)",
+        "min": 7,
+        "max": 16,
+        "step": 1,
+        "defaultValue": 10
+      },
+      {
+        "key": "showLimits",
+        "type": "boolean",
+        "label": "Display limits in the graph",
+        "defaultValue": true
+      }
+    ]
+  }
+}
