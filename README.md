@@ -2,7 +2,7 @@
 
 A read-only Omarchy bar widget for AMD Ryzen power limits. It shows live power next to the tray icon. Click it for every power, current and temperature limit with its live reading, a graph of the last minute, and a plain-English explanation on hover.
 
-![The AMD power popup](assets/screenshot.png)
+![The AMD power popup](assets/popup.png)
 
 It reads the SMU power table straight from the `ryzen_smu` kernel module. It never changes any limits, and it doesn't need root or `ryzenadj`.
 

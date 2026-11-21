@@ -10,7 +10,7 @@ An Omarchy shell plugin (`abagonhishead.amdpower`): a read-only bar widget that 
 - `Panel.qml`: the bar button, the popup and the settings view.
 - `Model.js`: decoding the power table, plus the per-version table layouts.
 - `i18n/en.json`: every user-visible string. Read them through `strings.t()`, and never hard-code text in QML.
-- `assets/screenshot.png`: the README screenshot.
+- `assets/popup.png`: the README screenshot.
 
 ## Data source
 
