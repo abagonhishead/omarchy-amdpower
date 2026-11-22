@@ -1,6 +1,6 @@
-# AMD power for Omarchy
+# amdpower for Omarchy
 
-An Omarchy plugin for showing APU/CPU power usage and limits on Ryzen platforms.
+An Omarchy plugin that shows APU/CPU power usage and power limits on AMD Ryzen platforms.
 
 <img src="assets/popup.png" alt="The AMD power popup" width="480">
 
@@ -29,7 +29,7 @@ If you use this and it works, please can you raise an issue or a PR to [mark you
 Likewise, if it doesn't work, please raise an issue with detail about what isn't working, or raise a PR to fix it. Feel free to use an LLM to help you, there are no restrictions on AI contribution to this repository.
 
 # Settings
-The settings cog gives you a few basic settings:
+The settings cog provides access to a few basic settings:
 - Show/hide the power reading in the tray, and adjust its font size
 - Show/hide the bars
 - Show/hide the 60s rolling graphs
